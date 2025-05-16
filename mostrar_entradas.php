@@ -39,8 +39,8 @@
 
                     echo "<div class='noticia'>";
                     echo "<h3><a href='" . $row['link'] . "' target='_blank'>" . htmlspecialchars($row['titulo']) . "</a></h3>";
-                    echo "<p class='db'>Recogido en la base de datos el día: " . date("d M Y H:i", strtotime($row['fecha_publicacion'])) . "</p>";
-                    echo "<p class='publicacion'><strong>Fecha de publicación:</strong> " . date("d/m/Y H:i", strtotime($row['fecha_publicacion'])) . "</p>";
+                    echo "<p class='db'>Recogido en la base de datos el día: " . date("d M Y H:i", strtotime($row['fecha_recogida'])) . "</p>";
+                    echo "<p class='publicacion'><strong>Fecha de publicación: " . date("d/m/Y H:i", strtotime($row['fecha_publicacion'])) . "</strong></p>";
                     echo "<p class='descripcion'>" . htmlspecialchars($row['descripcion']) . "</p>";
                     echo "<p class='palabras'>$palabras</p>";
                     echo "<p class='tipo'>$tipo</p>";

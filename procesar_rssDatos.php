@@ -17,7 +17,7 @@
 
         // Si no hay nada, entonces hace una inserción y muestra un mensaje si se ha insertado o no y si existe ya, un mensaje de que ya existe
         if (mysqli_num_rows($checknew) == 0) {
-            $insert = "INSERT INTO entradas_rss (titulo, link, fecha_publicacion, descripcion, guid) values ('$title', '$link', '$date', '$description', '$guid')";
+            $insert = "INSERT INTO entradas_rss (titulo, link, fecha_publicacion, descripcion, guid, fecha_recogida) values ('$title', '$link', '$date', '$description', '$guid', now())";
 
             if (mysqli_query($connect, $insert)) {
                 echo "Inserted: $title<br>";
