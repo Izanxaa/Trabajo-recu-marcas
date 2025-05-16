@@ -12,8 +12,6 @@
 
     if (!$connect) {
         die("Database connection error: " . mysqli_connect_error());
-    } else {
-        echo "Successfully connected to de database";
     }
 
 ?>
