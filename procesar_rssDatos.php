@@ -20,7 +20,7 @@
             $insert = "INSERT INTO entradas_rss (titulo, link, fecha_publicacion, descripcion, guid) values ('$title', '$link', '$date', '$description', '$guid')";
 
             if (mysqli_query($connect, $insert)) {
-                echo "Inserted: $title<br>"
+                echo "Inserted: $title<br>";
             } else {
                 echo "Error inserting: " . mysqli_error($connect) . "<br>";
             }
