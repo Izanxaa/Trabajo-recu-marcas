@@ -2,7 +2,11 @@
 
     require_once 'db/dbconnect.php';
 
-    if (isset($_POST['guid'])) {
+    if (isset($_POST['eliminar_todo'])) {
+       
+        $sqldelete = "delete from entradas_rss where guid like"
+
+    } elseif (isset($_POST['guid'])) {
         $texto = $_POST['guid'];
 
         $sqldelete = "delete from entradas_rss where guid like '%$texto%'";
@@ -15,3 +19,5 @@
         }
     }
 ?>
+
+
