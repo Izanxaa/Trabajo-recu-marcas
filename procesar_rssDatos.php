@@ -20,12 +20,12 @@
             $insert = "INSERT INTO entradas_rss (titulo, link, fecha_publicacion, descripcion, guid, fecha_recogida) values ('$title', '$link', '$date', '$description', '$guid', now())";
 
             if (mysqli_query($connect, $insert)) {
-                echo "Inserted: $title<br>";
+                echo "Insertada la entrada: $title<br>";
             } else {
-                echo "Error inserting: " . mysqli_error($connect) . "<br>";
+                echo "Error: " . mysqli_error($connect) . "<br>";
             }
         } else {
-            echo "Already exists: $title<br>";
+            echo "Entrada ya existente en la DB: $title<br>";
         }
     }
 ?>

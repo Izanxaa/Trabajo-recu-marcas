@@ -21,7 +21,7 @@
         <h2>Últimas noticias</h2>
         <p><strong>Tiempo en la página:</strong> <span id="tiempo">0s</span></p>
         <hr>
-        
+        <br>
         <?php
 
             if (mysqli_num_rows($resultado) > 0) {
@@ -44,7 +44,6 @@
                     echo "<p class='descripcion'>" . htmlspecialchars($row['descripcion']) . "</p>";
                     echo "<p class='palabras'>$palabras</p>";
                     echo "<p class='tipo'>$tipo</p>";
-                    echo "<hr>";
                     echo "</div>";
                 }
             } else {

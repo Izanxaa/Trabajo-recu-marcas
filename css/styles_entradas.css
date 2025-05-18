@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ddd;
     color: black;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    width: 700px;
+    width: 800px;
     background-color: white;
     padding: 30px;
     border-radius: 5px;
@@ -17,7 +17,11 @@ body {
 }
 
 .noticia {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .db {
@@ -49,7 +53,7 @@ body {
 
 h2 {
     text-align: center;
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 24px;
     color: #353535;
 }
@@ -57,10 +61,12 @@ h2 {
 h3 {
     color: black;
     margin-bottom: 5px;
+    font-size: 26px;
+    text-decoration: underline rgb(102, 102, 248);
 }
 
 a {
-    color: rgb(64, 64, 197);
+    color: rgb(102, 102, 248);
     text-decoration: none;
 }
 
